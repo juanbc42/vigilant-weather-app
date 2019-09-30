@@ -1,0 +1,16 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "This is the first implementation of a weather app",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "jbc",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1"
+  }
+}
