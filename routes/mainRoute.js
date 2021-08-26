@@ -15,10 +15,9 @@ var mainRoute = function mainRoute(){
         let url = `http://api.openweathermap.org/data/2.5/weather?q=${w_city}&units=${w_units}&appid=${apiKey}`;
         doFetch(url); //contacta a API com a URL necessaria, descrita acima
         
-        console.log(req.body);
-        console.log(req.url);
+        //console.log(req.body);
+        //console.log(req.url);
     });
 }
 
 module.exports = mainRoute;
-
