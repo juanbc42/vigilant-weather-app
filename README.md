@@ -4,7 +4,7 @@ Readme
 --
 
 Disclaimer: This application is solely for study and self improvement on development. Based on a step by step by Brandon Morelli (see sources). 
-It was customized the way I desire and improved by not using some deprecated libs. 
+It was customized the way I desire and improved by not using some deprecated libs, at the time of this development. 
 
 This is an application so you can see the weather based on the City inserted into the search box. 
 It uses OpenWeather API to get data related to the cities that a user search. 
