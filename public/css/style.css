@@ -1,4 +1,4 @@
-::root {
+* {
   --text-primary-color: #fff;
   --text-secondary-color: #000;
   --text-dark-color: #000;
@@ -8,13 +8,13 @@
   --light-mode-bkg: #fff;
   --dark-mode-bkg: #000;
 }
+
 body {
     width: 100%;
     margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
     background-color:#0984e3;
 }
-
 fieldset {
   display: block;
   -webkit-margin-start: 0px;
@@ -34,6 +34,7 @@ fieldset {
 }
 h1, h2, h3, h4, h5, h6 {
   color: var(--text-primary-color);
+  font-weight: 700;
 }
 p { 
   color: var(--text-primary-color);
@@ -53,10 +54,11 @@ p {
 }
 .ghost-input {
   display: block;
-  font-weight:300;
+  font-weight: 300;
   width: 100%;
   font-size: 25px;
-  border:0px;
+  border: 1px;
+  border-color: transparent;
   outline: none;
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -67,16 +69,31 @@ p {
   font-family: Open Sans,Verdana;
   padding: 10px 15px;
   margin: 30px 0px;
-  -webkit-transition: all 0.1s ease-in-out;
-  -moz-transition: all 0.1s ease-in-out;
-  -ms-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -ms-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
+
 .ghost-input:focus {
-  border-bottom:1px solid #ddd;
+  border: 1px solid #313131;
 }
 .divider-2{
   height: 1px;
   background-color: black;
+}
+
+.img-10 img{
+  width: 10%;
+  
+}
+
+.img-05 img{
+  width: 5%;
+  margin-right: 2%;
+}
+
+.resultSection h3 {
+  margin: 1em 0 1em 0;
 }

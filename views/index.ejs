@@ -19,37 +19,34 @@
   <body>
     <div class="container">
         <fieldset>
-        <form action="/" method="post">
-            <input name="city" type="text" class="ghost-input" placeholder="Enter a City" required>
-            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-              <label class="btn btn-secondary active">
-                <input type="radio" name="units" id="metric" autocomplete="off" value="metric" focus checked> Metric
-              </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="units" id="imperial" value="imperial" autocomplete="off"> Imperial
-              </label>
-          </div>       
-          <input type="submit" class="btn btn-dark btn-block m-1" value="Get Weather">
-          </form>
-          
-          <section aria-label="temperature results">
-            <% if(weather !== null){ %>
-              <h3><%= weatherCity %></h3>
-              <p><img src="/assets/imgs/icons/cloud.png"><%= weather %></p>
-              <p><%= weatherFeel %></p>
-              <p><img src="/assets/imgs/icons/pressure-gauge.png" alt="pressure"><%= weatherPressure %></p>
-              <p><img src="/assets/imgs/icons/wind.png" alt="wind"><%= weatherWind %></p>
-              <p><img src="/assets/imgs/icons/cloud.png" alt="clouds"><%= weatherClouds %></p>
-              <p><img src="/assets/imgs/icons/humidity.png" alt="humidity meter"><%= weatherHumidity %></p>
-              <p><%= weatherUnit %></p>
-              
-            <% } %> 
-            <% if(error !== null){ %>
-              <p><%= error %></p>
-            <% } %>
-          </section>
-              
-      </fieldset>
+          <form action="/" method="post">
+                <input name="city" type="text" class="ghost-input" placeholder="Enter a City" required>
+                  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                      <input type="radio" name="units" id="metric" autocomplete="off" value="metric" focus checked> Metric
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="units" id="imperial" value="imperial" autocomplete="off"> Imperial
+                    </label>
+                  </div>       
+              <input type="submit" class="btn btn-dark btn-block m-1" value="Get Weather">
+            </form>
+            
+            <section aria-label="temperature results" class="resultSection img-05">
+              <% if(weather !== null){ %>
+                <h3><img src="/static/assets/imgs/icons/location.png"><%= weatherCity %></h3>
+                <p><img src="/static/assets/imgs/icons/thermometer.png"><%= weather %></p>
+                <p><img src="/static/assets/imgs/icons/pressure.png" alt="pressure"><%= weatherPressure %></p>
+                <p><img src="/static/assets/imgs/icons/wind.png" alt="wind"><%= weatherWind %></p>
+                <p><img src="/static/assets/imgs/icons/cloud.png" alt="clouds"><%= weatherClouds %></p>
+                <p><img src="/static/assets/imgs/icons/humidity.png" alt="humidity meter"><%= weatherHumidity %></p>
+                
+              <% } %> 
+              <% if(error !== null){ %>
+                <p><%= error %>Foi encontrado um erro! Por favor tente novamente!</p>
+              <% } %>
+            </section>
+        </fieldset>
     </div>
   </body>
 </html>
