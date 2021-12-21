@@ -1,5 +1,4 @@
 const BodyCreate = require('./BodyCreate.js');
-//const GetweatherAPI = require('./GetweatherAPI.js');
 var ExpressServer = function ExpressServer(){
     const apiKey = '9a3387712c45666838557f30ce54b225';
     const axios = require('axios');
@@ -7,10 +6,9 @@ var ExpressServer = function ExpressServer(){
     const express = require('express');
     const bodyParser = require('body-parser');
     const path = require('path');
-    const app = express(); //inicializa o express como 'app'
+    const app = express(); //inicializa o express server como 'app'
     
     app.use('/static', express.static('public'));
-    //app.use('/static', express.static(__dirname + './public'));
     app.set('view engine', 'ejs');
     app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -24,8 +22,6 @@ var ExpressServer = function ExpressServer(){
         
         try {
                 const weatherAPI = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${w_city}&units=${w_units}&appid=${apiKey}`);
-                //const ResponseAPI = GetweatherAPI (w_city,w_units);
-                //console.log(ResponseAPI);
                 res.render('index', BodyCreate(weatherAPI, w_units));
             } catch (error) {
                 if(error.response) {
