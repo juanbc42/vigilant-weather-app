@@ -32,23 +32,22 @@
           <input type="submit" class="btn btn-dark btn-block m-1" value="Get Weather">
           </form>
           
-          <div>
+          <section aria-label="temperature results">
             <% if(weather !== null){ %>
-              <p><%= weatherCity %></p>
-              <div class="divider-2"></div>
-              <p><%= weather %></p>
+              <h3><%= weatherCity %></h3>
+              <p><img src="/assets/imgs/icons/cloud.png"><%= weather %></p>
               <p><%= weatherFeel %></p>
-              <p><%= weatherPressure %></p>
-              <p><%= weatherWind %></p>
-              <p><%= weatherClouds %></p>
-              <p><%= weatherHumidity %></p>
+              <p><img src="/assets/imgs/icons/pressure-gauge.png" alt="pressure"><%= weatherPressure %></p>
+              <p><img src="/assets/imgs/icons/wind.png" alt="wind"><%= weatherWind %></p>
+              <p><img src="/assets/imgs/icons/cloud.png" alt="clouds"><%= weatherClouds %></p>
+              <p><img src="/assets/imgs/icons/humidity.png" alt="humidity meter"><%= weatherHumidity %></p>
               <p><%= weatherUnit %></p>
               
             <% } %> 
             <% if(error !== null){ %>
               <p><%= error %></p>
             <% } %>
-          </div>
+          </section>
               
       </fieldset>
     </div>

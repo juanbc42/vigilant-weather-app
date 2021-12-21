@@ -1,4 +1,4 @@
-const BodyCreate = require('./BodyCreate.js');
+const BodyCreate = require('./public/js/BodyCreate.js');
 var ExpressServer = function ExpressServer(){
     const apiKey = '9a3387712c45666838557f30ce54b225';
     const axios = require('axios');
