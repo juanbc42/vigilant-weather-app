@@ -1,7 +1,7 @@
-FROM node:12.16-alpine
-RUN mkdir vigilant-weather
-COPY . ./vigilant-weather
+FROM node:16-alpine AS BUILD_IMAGE
 WORKDIR ./vigilant-weather/
+COPY package*.json ./
 RUN npm install
-EXPOSE 3000
-CMD npm start
+COPY . .
+EXPOSE 8080
+CMD ["node", "server.js"]
