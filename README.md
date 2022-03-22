@@ -12,7 +12,7 @@ It uses OpenWeather API to get data related to the cities that a user search.
 Requirements
 --
 
-Node (mandatory): >12 
+Node (mandatory): 12 + \n
 Docker (optional): latest
 
 Steps
