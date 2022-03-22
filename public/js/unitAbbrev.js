@@ -6,5 +6,6 @@ var unitAbbrev = function(unit) {
       abbrev='F';
     }
     return abbrev;
-  };
+};
+
 module.exports = unitAbbrev;

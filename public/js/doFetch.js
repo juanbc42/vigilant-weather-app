@@ -6,7 +6,6 @@ var doFetch = function doFetch(url){
     .then(res => res.json())
     .then(body => body.json()) //precisa de alguma funcao que recebe o body para assim tratar externamente ao fetch
     .catch(err => console.log(err));
-  
 };
 
 module.exports = doFetch;
