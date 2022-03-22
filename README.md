@@ -22,7 +22,7 @@ Steps to make it work:
 1. clone this repo
 2. run `npm i` in the terminal
 3. run `npm start` inside the vigilant-weather-app folder, via terminal. 
-4. access `localhost:3000` and it will be displayed the vigilant weather app first screen
+4. access `localhost:8080` and it will be displayed the vigilant weather app first screen
 5. to stop running, ctrl + c on the terminal. 
 
 Docker Image
