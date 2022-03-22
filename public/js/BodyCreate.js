@@ -10,16 +10,9 @@ var BodyCreate = function BodyCreate(wbody, w_units){
     let weatherWind = `Wind is ${weather.data.wind.speed} km/h`;
     let weatherClouds = `With ${weather.data.clouds.all}% of Clouds`;
     let weatherHumidity = `And ${weather.data.main.humidity}% of Humidity`;
-
-    //let page = ({weather: weatherText,weatherUnit,weatherFeel,weatherPressure,weatherWind,weatherClouds,weatherCity,weatherHumidity, error: null});
-    //console.log("body created");
-    //console.log(page);
-    //res.render(page);
-    
-        
-     
+  
     return ({weather: weatherText,weatherUnit,weatherFeel,weatherPressure,weatherWind,weatherClouds,weatherCity,weatherHumidity, error: null});
        
-    }
+}
 
 module.exports = BodyCreate;
