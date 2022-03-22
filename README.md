@@ -9,6 +9,12 @@ It was customized the way I desire and improved by not using some deprecated lib
 This is an application so you can see the weather based on the City inserted into the search box. 
 It uses OpenWeather API to get data related to the cities that a user search. 
 
+Requirements
+--
+
+Node (mandatory): >12 
+Docker (optional): latest
+
 Steps
 --
 
