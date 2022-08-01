@@ -16,6 +16,10 @@ var ExpressServer = function ExpressServer(){
         res.render('index', {weather: null, error: null});
     });
 
+    app.get('/my-weather', function (req, res) {
+        res.render('my-weather', {weather: null, error: null});
+    });
+
     app.post('/', async function (req, res) {
         let w_city = req.body.city; //necessário para buscar do html o conteudo de city
         let w_units = req.body.units;
