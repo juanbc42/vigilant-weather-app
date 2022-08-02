@@ -38,3 +38,6 @@ Also you can rename the container by inserting `docker rename <container ID> <NE
 Sources
 --
 1. Brandon Morelli's Step by Step https://codeburst.io/build-a-weather-website-in-30-minutes-with-node-js-express-openweather-a317f904897b
+
+Contributing
+in order to contribute please make it to any new branch prefixed 'dev'
