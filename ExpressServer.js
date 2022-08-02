@@ -23,10 +23,12 @@ var ExpressServer = function ExpressServer(){
     app.post('/', async function (req, res) {
         let w_city = req.body.city; //necessário para buscar do html o conteudo de city
         let w_units = req.body.units;
-        
+        console.log ("antes do try")
         try {
+            console.log ("entrou no try")
                 const weatherAPI = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${w_city}&units=${w_units}&appid=${apiKey}`);
                 res.render('index', BodyCreate(weatherAPI, w_units));
+                console.log (weatherAPI)
             } catch (error) {
                 if(error.response) {
                     console.log(error.response.data);
