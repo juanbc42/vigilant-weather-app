@@ -28,7 +28,9 @@ var ExpressServer = function ExpressServer(){
             console.log ("entrou no try")
                 const weatherAPI = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${w_city}&units=${w_units}&appid=${apiKey}`);
                 res.render('index', BodyCreate(weatherAPI, w_units));
-                console.log (weatherAPI)
+                const obj = JSON.stringify(weatherAPI.data);
+                console.log (obj);
+                //console.log (weatherAPI.data);
             } catch (error) {
                 if(error.response) {
                     console.log(error.response.data);
