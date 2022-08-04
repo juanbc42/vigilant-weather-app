@@ -29,7 +29,8 @@ Docker Image
 -- 
 Build this using the following steps
 1. `docker build . -t <your-name>/vigilant-weather-app`
-2. Then run it `docker run -p 8080:8080 -d <your-name>/vigilant-weather-app`
+2. Then run it `docker run -p 8080:8888 -d <your-name>/vigilant-weather-app`
+3. being the second part of 8080:[8888] the internal port of the application, and the first part the external to access on your local machine/server
 
 Check the file with `docker images` and `docker ps` to see if it's running.
 Also you can rename the container by inserting `docker rename <container ID> <NEW_NAME>` on the terminal. 
